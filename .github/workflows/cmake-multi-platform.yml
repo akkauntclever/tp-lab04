@@ -10,7 +10,7 @@ on:
 
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubunty-latest
+    runs-on: debian
 
     steps:
     - uses: actions/checkout@v4
