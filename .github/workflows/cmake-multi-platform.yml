@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-      run: cd hello_world_application && cmake -H -B build && cmake --build build && cd ../solver_application && cmake -H -B build && cmake --build build
+      run: cd hello_world_application && cmake -H. -B build && cmake --build build && cd ../solver_application && cmake -H. -B build && cmake --build build
